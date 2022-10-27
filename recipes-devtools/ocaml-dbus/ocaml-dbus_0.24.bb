@@ -32,4 +32,4 @@ do_install() {
     oe_runmake OCAMLDESTDIR="$(ocamlfind printconf destdir)" install
 }
 
-INSANE_SKIP_${PN}-dev = "file-rdeps"
+INSANE_SKIP:${PN}-dev = "file-rdeps"
