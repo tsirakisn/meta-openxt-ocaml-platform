@@ -6,7 +6,7 @@ applications is the definition of domain-specific extensions of the syntax of \
 OCaml."
 HOMEPAGE = "https://github.com/ocaml/camlp4"
 SECTION = "ocaml/devel"
-LICENSE = "GPLv2"
+LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=77f085d1023152a31ada8288ffd6e8f1"
 
 # Versions are <maj>.<min>+<micro>, but the tarball uses <maj>.<min>-<micro>.
