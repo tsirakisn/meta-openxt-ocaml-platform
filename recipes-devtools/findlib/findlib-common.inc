@@ -10,6 +10,10 @@ LICENSE = "MIT"
 
 S = "${WORKDIR}/findlib-${PV}"
 
+DEPENDS:append = " \
+    m4-native \
+"
+
 inherit ocaml
 
 do_configure() {
