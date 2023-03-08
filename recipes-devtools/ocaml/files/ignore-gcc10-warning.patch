@@ -1,0 +1,18 @@
+--- a/byterun/floats.c
++++ b/byterun/floats.c
+@@ -54,6 +54,7 @@ CAMLexport double caml_Double_val(value
+   return buffer.d;
+ }
+ 
++#pragma GCC diagnostic ignored "-Wuninitialized"
+ CAMLexport void caml_Store_double_val(value val, double dbl)
+ {
+   union { value v[2]; double d; } buffer;
+@@ -63,6 +64,7 @@ CAMLexport void caml_Store_double_val(va
+   Field(val, 0) = buffer.v[0];
+   Field(val, 1) = buffer.v[1];
+ }
++#pragma GCC diagnostic pop
+ 
+ #endif
+ 

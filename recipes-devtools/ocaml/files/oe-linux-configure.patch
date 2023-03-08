@@ -1,7 +1,7 @@
-Index: ocaml-4.04.2/configure
+Index: ocaml-4.05/configure
 ===================================================================
---- ocaml-4.04.2.orig/configure
-+++ ocaml-4.04.2/configure
+--- ocaml-4.05.orig/configure
++++ ocaml-4.05/configure
 @@ -559,6 +559,15 @@ if test "$?" -eq 0; then
  else
    # For cross-compilation, runtest always fails: add special handling.

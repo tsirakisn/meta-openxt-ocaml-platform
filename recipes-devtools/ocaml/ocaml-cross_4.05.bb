@@ -1,7 +1,8 @@
-require ocaml-4.04.inc
+require ocaml-4.05.inc
 
 SRC_URI += " \
     file://0001-cross-Add-cross-compilation-rules.patch \
+    file://ignore-gcc10-warning.patch \
 "
 
 DEPENDS += " \
